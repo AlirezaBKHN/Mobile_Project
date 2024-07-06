@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/cellInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:text="Cell Info will be displayed here" />
+
+
+    <Button
+        android:id="@+id/viewDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Stored Data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:layout_alignParentTop="true" />
+    <Button
+        android:id="@+id/viewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Location"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:layout_alignParentTop="true" />
+
+
+</RelativeLayout>
