@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")  // Apply kotlin-kapt plugin here
 }
 
 android {
@@ -59,6 +60,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -66,4 +68,16 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("com.google.android.gms:play-services-location:latest.release")
+    implementation("androidx.room:room-runtime:latest.release")
+    kapt("androidx.room:room-compiler:latest.release")
+    implementation("androidx.room:room-ktx:latest.release")
+    implementation("androidx.recyclerview:recyclerview:latest.release")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:latest.release")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:latest.release")
+    implementation("androidx.fragment:fragment-ktx:latest.release")
+    implementation ("com.google.android.gms:play-services-maps:latest.release")
+    implementation ("com.google.android.gms:play-services-location:latest.release")
+
+
 }
