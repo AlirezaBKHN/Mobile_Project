@@ -2,7 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobile_Project"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCsB2503q1PYqNiV_2d89yN-kwIeeWjubs" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -22,6 +31,36 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayDataActivity"
+            android:label="Display Data">
+
+            <!-- No intent-filter needed unless you want to specify entry points -->
+        </activity>
+        <activity
+            android:name=".GatherDataActivity"
+            android:label="Gather Data">
+
+            <!-- No intent-filter needed unless you want to specify entry points -->
+        </activity>
+        <activity
+            android:name=".ViewDataActivity"
+            android:label="View Data">
+
+            <!-- No intent-filter needed unless you want to specify entry points -->
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:label="Map Data">
+
+            <!-- No intent-filter needed unless you want to specify entry points -->
+        </activity>
+        <activity
+            android:name=".LocationActivity"
+            android:label="Location">
+
+            <!-- No intent-filter needed unless you want to specify entry points -->
         </activity>
     </application>
 
